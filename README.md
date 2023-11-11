@@ -110,12 +110,12 @@ Before you get to work you will need to have a basic understanding of the PowerB
 3. Right-click the Query in the query editor (often called "Query1" in new documents) and click **Advanced Editor**
 4. Paste the contents of **XERPowerBI.pq** into the Advanced Editor and click done
 5. You now have a function for opening XER Binary files in PowerQuery, now you need to find your binaries
-6. Rename the function by right-clicking it, the name of the function will be how we reference it later, so it's best to use IFC4PowerBI
-7. The easiest way to do this is to locate a folder with one or many IFC files. **New Source > Folder**
+6. Rename the function by right-clicking it, the name of the function will be how we reference it later, so it's best to use XER4PowerBI
+7. The easiest way to do this is to locate a folder with one or many XER files. **New Source > Folder**
 8. Select your folder and click open. Use the PowerBI filters to filter out any files that are not required
 9. Create a new column **Add Column > Custom Column**
-10. In the formula box type **XER4PowerBI([Content])** . This assumes you named the function IFC4PowerBI and you now have a column called **Content** which contains **Binary** values
-11. This will leave you with a new column consisting of a table, which you can expand to find all of the IFC metadata from your models. **Make sure you delete the Content column before expanding to avoid exponential memory consumption**
+10. In the formula box type **XER4PowerBI([Content])** . This assumes you named the function XER4PowerBI and you now have a column called **Content** which contains **Binary** values
+11. This will leave you with a new column consisting of a table, which you can expand to find all of the tables from your XER file. **Make sure you delete the Content column before expanding to avoid exponential memory consumption**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
